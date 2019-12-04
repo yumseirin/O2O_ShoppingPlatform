@@ -27,15 +27,14 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.2.1</version>
+			<version>1.2.3</version>
 		</dependency>
 
 		<!-- 2.数据库 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.12</version>
-			<scope>runtime</scope>
+			<version>8.0.15</version>
 		</dependency>
 		<dependency>
 			<groupId>c3p0</groupId>
@@ -66,11 +65,13 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- json解析 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<version>2.8.7</version>
 		</dependency>
+		<!-- Servlet web -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -121,6 +122,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
+			<scope>test</scope>
 		</dependency>
 
 		<!-- redis客户端:Jedis -->
@@ -140,7 +142,7 @@
 			<version>1.0.12</version>
 		</dependency>
 
-		<!-- Map工具类 -->
+		<!-- Map工具类 对标准java Collection的扩展spring-core.jar需commons-collections.jar -->
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
