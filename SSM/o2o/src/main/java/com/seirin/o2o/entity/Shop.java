@@ -3,39 +3,39 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 店铺
- * 
+ * @Description: tb_shop对应的实体类
  * @author seirin
  *
  */
 public class Shop {
-	// ID
 	private Long shopId;
-	// 店名
 	private String shopName;
-	// 店铺描述
 	private String shopDesc;
-	// 地址
 	private String shopAddr;
-	// 电话
 	private String phone;
-	// 店铺图
 	private String shopImg;
-	// 权重
 	private Integer priority;
-	// 创建时间
 	private Date createTime;
-	// 最后修改时间
 	private Date lastEditTime;
-	// 状态： -1.不可用 0.审核用 1.可用
+	/**
+	 * -1不可用 0审核中 1可用
+	 */
 	private Integer enableStatus;
-	// 超级管理员给店家的提醒
+	/**
+	 * 超级管理员给店家的提醒
+	 */
 	private String advice;
-	// 区域
-	private Area area;
-	// 用户
+	/**
+	 * 店铺所属店主
+	 */
 	private PersonInfo owner;
-	// 店铺类别
+	/**
+	 * 店铺所在区域
+	 */
+	private Area area;
+	/**
+	 * 店铺类别
+	 */
 	private ShopCategory shopCategory;
 
 	public Long getShopId() {
@@ -126,20 +126,20 @@ public class Shop {
 		this.advice = advice;
 	}
 
-	public Area getArea() {
-		return area;
-	}
-
-	public void setArea(Area area) {
-		this.area = area;
-	}
-
 	public PersonInfo getOwner() {
 		return owner;
 	}
 
 	public void setOwner(PersonInfo owner) {
 		this.owner = owner;
+	}
+
+	public Area getArea() {
+		return area;
+	}
+
+	public void setArea(Area area) {
+		this.area = area;
 	}
 
 	public ShopCategory getShopCategory() {

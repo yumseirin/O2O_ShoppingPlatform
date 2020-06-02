@@ -2,6 +2,12 @@ package com.seirin.o2o.entity;
 
 import java.util.Date;
 
+/**
+ * @Description: 区域实体类
+ * 
+ * @author seirin
+ *
+ */
 public class Area {
 
 	// ID

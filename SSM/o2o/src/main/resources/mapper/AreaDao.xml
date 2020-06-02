@@ -3,11 +3,12 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.seirin.o2o.dao.AreaDao">
-
 	<select id="queryArea" resultType="com.seirin.o2o.entity.Area">
-		SELECT area_id,area_name
-		,priority,create_time,last_edit_time
-		FROM tb_area
-		ORDER BY priority DESC
+		select 
+		area_id, area_name,
+		priority, create_time,
+		last_edit_time
+		from tb_area 
+		order by priority desc
 	</select>
 </mapper>

@@ -4,40 +4,26 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 商品
- * 
+ * @Description: 商品实体类
  * @author seirin
  *
  */
 public class Product {
-
-	// ID
 	private Long productId;
-	// 商品名
 	private String productName;
-	// 商品描述
 	private String productDesc;
-	// 简略图
-	private String imgAddr;
-	// 原价
-	private String normalPrice;
-	// 折扣价
-	private String promotionPrice;
-	// 权重
+	private String imgAddr;// 简略图
+	private String normalPrice;// 原价
+	private String promotionPrice;// 折后价
 	private Integer priority;
-	// 创建时间
 	private Date createTime;
-	// 更新时间
 	private Date lastEditTime;
-	// 状态：0.下架 1.可用，在前端展示
-	private Integer enableStatus;
+	private Integer enableStatus;// 0、下架，1、在前端展示系统展示
+	private Integer point;
 
-	// 商品图片（一对多）
-	private List<ProductImg> productImgList;
-	// 商品类别
-	private ProductCategory productCategory;
-	// 店铺
-	private Shop shop;
+	private List<ProductImg> productImgList;// 产品对应的详情列表,一对多
+	private ProductCategory productCategory;// 产品所属产品目录
+	private Shop shop;// 产品所属店铺
 
 	public Long getProductId() {
 		return productId;
@@ -117,6 +103,14 @@ public class Product {
 
 	public void setEnableStatus(Integer enableStatus) {
 		this.enableStatus = enableStatus;
+	}
+
+	public Integer getPoint() {
+		return point;
+	}
+
+	public void setPoint(Integer point) {
+		this.point = point;
 	}
 
 	public List<ProductImg> getProductImgList() {

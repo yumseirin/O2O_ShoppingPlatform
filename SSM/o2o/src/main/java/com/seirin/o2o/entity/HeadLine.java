@@ -3,28 +3,20 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 头条
- * 
+ * @Description: 头条实体类
  * @author seirin
  *
  */
 public class HeadLine {
 
-	// ID
 	private Long lineId;
-	// 名称
 	private String lineName;
-	// 链接
 	private String lineLink;
-	// 图片
 	private String lineImg;
-	// 权重
 	private Integer priority;
-	// 状态：0.不可用 1.可用
+	// 0.不可用1.可用
 	private Integer enableStatus;
-	// 创建时间
 	private Date createTime;
-	// 修改时间
 	private Date lastEditTime;
 
 	public Long getLineId() {

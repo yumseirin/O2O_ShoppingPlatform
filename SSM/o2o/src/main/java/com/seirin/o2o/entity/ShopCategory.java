@@ -3,27 +3,18 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 店铺类别
- * 
+ * @Description: 店铺类别实体类
  * @author seirin
  *
  */
 public class ShopCategory {
-	// ID
 	private Long shopCategoryId;
-	// 名称
 	private String shopCategoryName;
-	// 描述
 	private String shopCategoryDesc;
-	// 图片
 	private String shopCategoryImg;
-	// 权重
 	private Integer priority;
-	// 创建时间
 	private Date createTime;
-	// 最后修改时间
 	private Date lastEditTime;
-	// 父店铺类别（ID）
 	private ShopCategory parent;
 
 	public Long getShopCategoryId() {
@@ -89,5 +80,4 @@ public class ShopCategory {
 	public void setParent(ShopCategory parent) {
 		this.parent = parent;
 	}
-
 }

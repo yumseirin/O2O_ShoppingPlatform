@@ -3,24 +3,21 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 商品图片
- * 
+ * @Description: 商品图片实体类
  * @author seirin
  *
  */
 public class ProductImg {
-	// ID
 	private Long productImgId;
-	// 地址
 	private String imgAddr;
-	// 描述
 	private String imgDesc;
-	// 权重
 	private Integer priority;
-	// 创建时间
 	private Date createTime;
-	// 商品ID，属于哪个商品
 	private Long productId;
+
+//	// 与product联合查询字段
+//	private String piImgAddr;
+//	private String piImgDesc;
 
 	public Long getProductImgId() {
 		return productImgId;

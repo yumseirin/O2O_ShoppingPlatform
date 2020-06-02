@@ -3,24 +3,18 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 本地账号
- * 
+ * @Description: 本地用户信息
  * @author seirin
  *
  */
 public class LocalAuth {
-
-	// 本地账号
+	// 主键ID
 	private Long localAuthId;
-	// 用户名
 	private String username;
-	// 密码
 	private String password;
-	// 创建时间
 	private Date createTime;
-	// 修改时间
 	private Date lastEditTime;
-	// 用户信息
+	// 个人信息
 	private PersonInfo personInfo;
 
 	public Long getLocalAuthId() {
@@ -70,5 +64,4 @@ public class LocalAuth {
 	public void setPersonInfo(PersonInfo personInfo) {
 		this.personInfo = personInfo;
 	}
-
 }

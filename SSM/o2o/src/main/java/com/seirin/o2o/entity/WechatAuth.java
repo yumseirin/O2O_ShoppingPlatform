@@ -3,20 +3,15 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 微信账号
- * 
+ * @Description: 微信用户实体类
  * @author seirin
  *
  */
 public class WechatAuth {
 
-	// ID
 	private Long wechatAuthId;
-	// openID
 	private String openId;
-	// 创建时间
 	private Date createTime;
-	// 用户信息
 	private PersonInfo personInfo;
 
 	public Long getWechatAuthId() {

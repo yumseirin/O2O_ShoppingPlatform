@@ -3,26 +3,17 @@ package com.seirin.o2o.entity;
 import java.util.Date;
 
 /**
- * 商品类别
- * 
+ * @Description: 商品类别实体类
  * @author seirin
  *
  */
 public class ProductCategory {
-
-	// 商品类别ID
 	private Long productCategoryId;
-	// 商铺ID
 	private Long shopId;
-	// 名称
 	private String productCategoryName;
-	// 描述
 	private String productCategoryDesc;
-	// 权重
 	private Integer priority;
-	// 创建时间
 	private Date createTime;
-	// 修改时间
 	private Date lastEditTime;
 
 	public Long getProductCategoryId() {
@@ -80,5 +71,4 @@ public class ProductCategory {
 	public void setLastEditTime(Date lastEditTime) {
 		this.lastEditTime = lastEditTime;
 	}
-
 }
